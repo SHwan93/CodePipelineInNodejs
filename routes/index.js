@@ -6,7 +6,7 @@ const startDate = Date();
 router.get("/", function (req, res, next) {
   res.render("index", {
     title: "CodePipeline Test",
-    body: `Started at ${startDate}`,
+    body: `Started at ${startDate} in ${process.pid}`,
   });
 });
 
